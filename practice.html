@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <h1 id="top">top of the page....!</h1><!-- this tag is used for bottom to top scroll with the help of top attribute-->
+
+    <!-- we can also had image url's  -->
+    <a href="https://www.udemy.com/" target="_blank"><img src="/images/udemy.png" alt="" width="250px"></a>
+    <br/>
+
+    <!--if u dont know the link then u can addd #  -->
+    <!-- example 
+        <a href="#">future link</a>
+    -->
+
+
+
+    <br/>
+    <a href="about.html">about us</a>
+<!-- this a comment 
+     the shortcut can be ctrl + / -->
+    <h3>A Boy is typing..!</h3>
+    <img src="/images/img1.jpg" alt="a boy is typing">
+  
+
+    <!-- enter a and then press tab button then the syntax for link will get  ----- > <a href=""></a>   -->
+    <!-- the href will tell where the user will navigating after clicking.. -->
+    <!-- if you dont want to leave ur site and instead of that we can have a another tab then use the attribute  "target=_blank"-->
+    <a href="https://www.udemy.com/" target="_blank">Coding is not a hobby its a fashion!..</a> <!-- this is a external link -->
+    
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--these are used for space i.e, &nbsp; -->
+    <!-- for internal link ---- -->
+    <a href="about.html">About us</a>
+    <!-- <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/> -->
+    <h1>start day2</h1>
+    <p>about sub and sup elements</p>
+<h4> <sup>i am sup element</sup> and <sub>i am sub element</sub></h4>
+
+<!--  to get the dummy text write lorem then add a numeric value based on no of words u required 
+i my case i given as lorem30-->
+<p>about strong  and  emphasize elements</p>
+<p> <strong>Lorem ipsum dolor</strong>,
+     sit amet consectetur adipisicing elit. Fugiat,
+    <em> eum esse laborum in voluptatum porro unde odio ea dolor eveniet, recusandae, </em> 
+    ipsa laudantium libero sit dolores quasi optio perferendis reprehenderit?
+</p>
+<br/>
+
+<!-- we can use special characters with the help of ampercent  i.e, type & then write a character then u get the intelligence -->
+<p>
+    copyrights &copy; Reserved!
+</p>
+
+<br/>
+<!-- unordered and ordered lists -->
+<!-- unorder list is denoted by ul -->
+<!-- li denotes list items  -->
+<!-- ol denotes odered list-->
+<ul>
+    <li>zaheer</li>
+    <li>introvert</li>
+    <li>software enginner</li>
+</ul>
+<!-- where we can use this ul means in navigation bar.. example -->
+<ul>
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <li>
+        <a href="about.html">About Us</a>
+    </li>
+    <li>
+        <a href="contact.html">Contact Us</a>
+    </li>
+    <li>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </li>
+</ul>
+<!-- they give this type of order but we can change it into side by side through css -->
+<!-- Home
+About Us
+Contact Us
+Privacy Policy -->
+<br/>
+
+
+<!-- ordered list -->
+<ol>
+    <li>apple</li>
+    <li>ball</li>
+    <li>cat</li>
+    <li>dog</li>
+</ol>
+
+<br>
+<!-- nested list -->
+<p> nested list</p>
+<ul>
+    <li>zaheer</li>
+    <li>introvert
+        <ol>
+            <li>he is a introvert</li>
+            <li>he likes silence</li>
+            <li>he not a exposure person</li>
+        </ol>
+    </li>
+    <li>avocado</li>
+</ul>
+<!-- tables -->
+<table border="1">
+    <!-- tr ----- to create row
+         td ----- to create data
+         th ----- table heading
+        -->
+
+<tr>
+    <th>name</th>
+    <th>branch</th>
+    <th>mobile no.</th>
+</tr>
+
+ <tr>
+     <td>zaheer</td>
+     <td>cse</td>
+     <td>1234567890</td> 
+ </tr>
+
+ <tr>
+    <td>sahana</td>
+    <td>cse</td>
+    <td>12345867890</td> 
+</tr>
+
+<tr>
+    <td>tinku</td>
+    <td>cse</td>
+    <td>12342567890</td> 
+</tr>
+</table>
+
+<br>
+<!-- to take some data from user we use forms -->
+<!-- formspree.io is a website where we can get a spinnets for forms -->
+<!-- shortcut is first type input then semicolon then we get the intelligence to pick then press enter -->
+<form action="" method="">
+<label for='name'>name</label>
+<input type="text" name="name" id="name"><br/>
+password:<input type="password" placeholder="password"><br/>
+<label for='email'>Email</label>
+<input type="email" placeholder="email"  name="email"><br/>
+<textarea name="" id="" cols="30" rows="1" placeholder="Enter comment or any description"></textarea><br/>
+<p>please select your coding language</p>
+<input type="radio" name="coding" 
+id="" value="javascript">javascript
+<input type="radio" name="coding" 
+id="" value="java">java
+<input type="radio" name="coding" 
+id="" value="python">python
+<br/>
+<p>select your favourite languages</p>
+<input type="checkbox" name="programming" id="" value="javascript">javascript
+<input type="checkbox" name="programming" id="" value="java">java
+<input type="checkbox" name="programming" id="" value="python">python
+<input type="checkbox" name="programming" id="" value="c++">c++
+<input type="checkbox" name="programming" id="" value="c">c
+<br/>
+<p>select your favourite languages</p>
+<select name="languages" id="">
+    <option value="javascript">javascript</option>
+    <option value="java">java</option>
+    <option value="python">python</option>
+    <option value="c++">c++</option>
+    <option value="c">c</option>
+</select><br/>
+<input type="checkbox" checked>remember me <br>
+
+
+<input type="submit">
+<!-- <button type="submit">submit</button> -->
+</form>
+<!-- <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/> -->
+
+<!-- 
+    save time
+    
+ALT === OPTION
+COMMAND === CTRL WINDOWS
+COMMAND+ Z ==== UNDO +C +V
+HOLD OPTION + CLICK ==== MULTIPLE CURSORS    alt means option key
+COMMAND + I SELECT WHOLE LINE
+OPTION + LEFT/RIGHT KEYS NAVIGATE
+COMMAND + LEFT/RIGHT KEYS START/END OF LINE
+COMMAND + UP/DOWN = START/END DOCUMENT
+SHIFT+ OPTION+DOWN = COPY LINE
+ALT + UP/DOWN = MOVE LINE UP/DOWN
+COMMAND+ / = TOGGLE LINE COMMENT
+COMMAND+K + COMMAND + S = SHORTCUTS
+COMMAND + ENTER = START A NEW LINE
+ctrl + n new file
+-->
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/> -->
+    <p>some text here</p>
+    <a href="#top">back to top</a>  <!--internal navigating-->
+      
+    
+  
+    
+</body>
+</html> 
