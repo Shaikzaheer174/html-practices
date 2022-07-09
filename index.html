@@ -1,106 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fullstack developer</title>
+    <title>HTML Practices</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- to use bootstrap in html-->
+
+    <!--
+    <script>
+        alert('welcome to my website');
+    </script>  -->
+
+    <style>
+        span.paragraph {
+            color: red;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td,
+        th {
+            border-width: 1px;
+            border-style: dotted;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="./images/html.png" id="logo" alt="programming logo">
-    <h3>Welcome to my programming website</h3>
+    <img src="images/two.jpg" alt="2nd image" height="500px" width="500px" />
+    <!-- srcset="content/images/two.jpg, content/images/three.jpg" sizes="(max-width: 500px) 25vw, 50vw" -->
+
+    <!--style="float:left"-->
+    <p class="lead">Hello World</p>
+    <button type="button" class="btn btn-primary">Download!</button>
+    <p>block elements(e.g div)</p>
+    <p>container to group other elements</p><br />
+    <p>may contain block or inline elements</p>
+    &
+
+    <p>inline elements(e.g span)</p>
+    <p>container for text</p>
+    <p>may contain other<br /> inline elements</p>
+
+    <!-- span e.g -->
+    <!-- <span>some plain text <span id="inner">with inline text</span> included</span> -->
+
+    <!-- examples -->
+    <h1>Nesting Block elements</h1>
+    <hr />
+    <div>
+        <p>a paragraph explaining coffee.</p>&lt;&gt;
+        <!-- lessthan and greater than--> &nbsp;
+        <!-- -->
+        <p>a paragraph about the code with zaheer.</p>
+    </div>
+
+    <h1>nesting inline elements</h1>
+    <hr />
+    <p>this is a block with <span>inline text </span>within it.</p>
+
+    <sup>qwer</sup>
+    <sub>qweeeeer</sub>
+    <pre>qwer</pre>
+    <cite>qwert</cite>
+    <abbr title="wired brain">abcdefg</abbr>
+    <code>code</code>
+    <samp>qwer</samp>
+    <blockquote>qwer</blockquote>
+    <q>wazs</q>
+    <var>qwer</var>
+
+    <p>Lorem ipsum dolor, sit amet consectetur <span class="paragraph">adipisicing elit.</span>Expedita dolorem porro
+        inventore aliquam possimus</p>
+
+
+
+
+
+    <div id="footer">
+        <p> &copy; developed by zaheer</p> <!-- &copy   for copy right symbol. -->
+    </div>
+
+
+
+
+    <!-- body syntax contains or should be in such a way as below.... -->
+    <!-- <body>
+    <article>
+        <header>
+            <p>
+
+            </p>
+        </header>
+
+    </article>
+
+    <section id="body">
+
+    </section>
+    </body> -->
+
+
+
+    <hr />
+    <!-- lists -->
+    <h1>there are three types of lists</h1>
+    <h4>1. unordered list</h4>
+    <h4>2. ordered list</h4>
+    <h4>3. definition list</h4>
+
+    <h2>Unordered list ex:</h2>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li> abcde</li>
+        <li> fghij</li>
+        <li> klmno</li>
+        <li> pqrst</li>
+        <li> uvwxyz</li>
     </ul>
-    <img src="./images/mainimg.jpg" width="100%"   alt="hero image">
-    <br>
-    <h1>Featured Posts</h1>
-    <br>
-    <!-- posts -->
-    <h2>java</h2>
-    <img src="./images/java.png" alt="java">
-    <p style="width: 50%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis, 
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-    </p>
-    <h3> <a href="https://www.wikipedia.org/" target="_blank">Details</a></h3>
-    <br>
-    <br>
-    <h2>python</h2>
-    <img src="./images/python.png" alt="python">
-    <p style="width: 50%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-    </p>
-    <h3> <a href="https://www.wikipedia.org/" target="_blank">Details</a></h3>
-    <br>
-    <br>
-    <h2>c</h2>
-    <img src="./images/c.png" alt="c">
-    <p style="width: 50%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-    </p>
-    <h3> <a href="https://www.wikipedia.org/" target="_blank">Details</a></h3>
-    <br>
-    <br>
-    <h2>c++</h2>
-    <img src="./images/c++.png" alt="c++">
-    <p style="width: 50%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis tenetur laborum reiciendis,
-        doloremque aspernatur, cum incidunt corporis asperiores, temporibus voluptate veniam hic alias.
-        Facilis earum laudantium similique quae debitis?
-    </p>
-    <h3> <a href="https://www.wikipedia.org/" target="_blank">Details</a></h3>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p style="text-align: center">copyright &copy; codewithzaheer 2022</p>
-    <h3 style="text-align: right"><a href="#logo"><img src="./images/scroll.png" alt="scroll" width="5%" height="5%" ></a></h3>
+
+    <h2>ordered list ex:</h2>
+    <ol>
+        <li> abcde</li>
+        <li> fghij</li>
+        <li> klmno</li>
+        <li> pqrst</li>
+        <li> uvwxyz</li>
+    </ol>
+
+    <section title="my section">
+        <h2>definition list</h2>
+        <dl>
+            <dt>cat</dt>
+            <dd>it is a animal</dd>
+
+            <dt>dog</dt>
+            <dd>dog will bark</dd>
+        </dl>
+    </section>
+
+
+    <!-- modern list -->
+    <header>
+        <h2>modern list</h2>
+        <h4>wired brain coffee extras</h4>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">wired brain coffee</li>
+            <li class="breadcrumb-item">Recipes</li>
+            <li class="breadcrumb-item active">Hot cocoa</li>
+        </ol>
+    </header>
+
+
+    <!-- anchor tags -->
+
+    <h2>links</h2>
+    <a href="index.html" target="_blank">Hello world</a>
+
+    <nav>
+        <ul>
+            <li><a href="./newfolder/main.html#brownies" target="_blank" rel="noreferrer noopener">Next Page</a></li>
+            <li><a href="/index.html" target="_top">Prev Page</a></li>
+            <li><a href="/index.html">Prev Page</a></li>
+        </ul>
+    </nav>
+
+    <!-- expanding links meta data -->
+    <h1>expanding links meta data</h1>
+    <p>language</p>
+    <p>relationship</p>
+    <p>content Type</p>
+    <p>access key</p>
+    <p>target</p>
+    <hr />
+
+    <!-- tables -->
+    <h1>tables</h1>
+    <p>it contains</p>
+    <ol>
+        <li>caption</li>
+        <li>header</li>
+        <li>body</li>
+        <li>footer</li>
+    </ol>
+
+    <p> "< tr>" represents table row.</p>
+    <p>" < th>" represents table header.</p>
+    <p>"< td> " represents table data.</p>
+    <p>colspan</p>
+    <p>rowspan</p>
+
+    <section id="tabless">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, animi!</p>
+        <!-- use css to style tables ie., control spacing, borders, padding  -->
+        <table border="1">
+            <caption>wired Brain table</caption>
+
+            <thead>
+                <tr>
+                    <th rowspan="2">drink</th>
+                    <th>serving size</th>
+                    <th colspan="2">calories</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>one</td>
+                    <td>two</td>
+                    <td>three</td>
+                </tr>
+                <tr>
+                    <td>one</td>
+                    <td>two</td>
+                    <td>three</td>
+                </tr>
+                <tr>
+                    <td>one</td>
+                    <td>two</td>
+                    <td>three</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>max</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </section>
+
+
+    <!-- images -->
+    <h1>images</h1>
+    <img src="./images/one.jpg" alt="first image" height="750px" width="600px" />
+
+
+    <picture>
+        <source type="image/jpeg" srcset="images/three.jpg 250w, images/two.jpg 250w"
+            sizes="(max-width: 500px) 25vw, 50vw" />
+        <source type="image/png" srcset="images/three.jpg 250w, images/two.jpg 250w"
+            sizes="(max-width: 500px) 25vw, 50vw">
+
+        <img src="images/three.jpg" alt="three" width="600px" height="750px">
+    </picture>
 </body>
+
 </html>
